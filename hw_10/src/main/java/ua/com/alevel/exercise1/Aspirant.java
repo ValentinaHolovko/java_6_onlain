@@ -1,4 +1,4 @@
-package ua.com.alevel;
+package ua.com.alevel.exercise1;
 
 public class Aspirant extends Student {
     private String scientificWork;
