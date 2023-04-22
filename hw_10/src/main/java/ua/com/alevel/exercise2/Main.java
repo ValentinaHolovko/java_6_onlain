@@ -14,6 +14,7 @@ public class Main {
         int p = 4;
         int result = pow.pow(number, p);
         System.out.println(number + " в степени " + p + " = " + result);
-    }}
+    }
+}
 
 
