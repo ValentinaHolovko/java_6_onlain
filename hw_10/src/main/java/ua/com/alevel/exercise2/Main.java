@@ -10,8 +10,8 @@ public class Main {
             return result;
         };
 
-        int number = 2;
-        int p = 4;
+        int number = 7;
+        int p = 6;
         int result = pow.pow(number, p);
         System.out.println(number + " в степени " + p + " = " + result);
     }
