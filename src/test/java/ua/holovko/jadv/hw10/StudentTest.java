@@ -1,4 +1,4 @@
-package ua.com.alevel.exercise1;
+package ua.holovko.jadv.hw10;
 
 import org.junit.Assert;
 import org.junit.Test;

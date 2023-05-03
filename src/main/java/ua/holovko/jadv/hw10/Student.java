@@ -1,4 +1,4 @@
-package ua.com.alevel.exercise1;
+package ua.holovko.jadv.hw10;
 
 import java.util.Objects;
 
