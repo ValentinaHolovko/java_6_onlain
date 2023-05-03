@@ -1,4 +1,4 @@
-package ua.com.alevel.exercise2;
+package ua.holovko.jadv.exercise2;
 
 public class Main {
     public static void main(String[] args) {
