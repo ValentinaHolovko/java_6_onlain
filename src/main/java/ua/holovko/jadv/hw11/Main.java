@@ -1,4 +1,4 @@
-package ua.holovko.jadv.exercise2;
+package ua.holovko.jadv.hw11;
 
 public class Main {
     public static void main(String[] args) {
