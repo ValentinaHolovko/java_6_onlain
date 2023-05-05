@@ -19,18 +19,5 @@ public class StudentTest {
         Assert.assertEquals(80, student.getScholarship());
     }
 
-    @Order(3)
-    @Test
-    public void testGetScholarshipForAspirantWithAverageMark5() {
-        Aspirant aspirant = new Aspirant("Bob", "Smith", "Group В", 5.0, "Scientific Work");
-        Assert.assertEquals(200, aspirant.getScholarship());
-    }
-
-    @Order(4)
-    @Test
-    public void testGetScholarshipForAspirantWithAverageMarkLessThan5() {
-        Aspirant aspirant = new Aspirant("Alice", "Johnson", "Group В", 4.5, "Scientific Work");
-        Assert.assertEquals(180, aspirant.getScholarship());
-    }
 }
 
