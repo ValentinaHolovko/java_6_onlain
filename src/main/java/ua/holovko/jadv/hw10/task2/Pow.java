@@ -1,4 +1,4 @@
-package ua.holovko.jadv.hw11;
+package ua.holovko.jadv.hw10.task2;
 
 
 @FunctionalInterface

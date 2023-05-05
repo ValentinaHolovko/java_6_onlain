@@ -1,4 +1,4 @@
-package ua.holovko.jadv.hw10;
+package ua.holovko.jadv.hw10.task1;
 
 import org.junit.Assert;
 import org.junit.Test;

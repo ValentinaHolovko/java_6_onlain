@@ -1,4 +1,4 @@
-package ua.holovko.jadv.hw10;
+package ua.holovko.jadv.hw10.task1;
 
 import java.util.Objects;
 

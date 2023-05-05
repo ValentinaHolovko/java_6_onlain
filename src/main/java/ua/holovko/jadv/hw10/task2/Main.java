@@ -1,4 +1,6 @@
-package ua.holovko.jadv.hw11;
+package ua.holovko.jadv.hw10.task2;
+
+import ua.holovko.jadv.hw10.task2.Pow;
 
 public class Main {
     public static void main(String[] args) {
