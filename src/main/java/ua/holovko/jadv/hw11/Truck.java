@@ -1,19 +1,21 @@
 package ua.holovko.jadv.hw11;
 
-public class Truck extends Car implements Recovery {
+public class Truck extends Car {
     private int cargo;
+    private final int cargoCapacity;
 
-    public Truck(String series, int year, String color, int tankSize, int fuel, int fuelConsumption) {
+    public Truck(String series, int year, String color, int tankSize, int fuel, int fuelConsumption, int cargoCapacity) {
         super(series, year, color, tankSize, fuel, fuelConsumption);
+        this.cargoCapacity = cargoCapacity;
         cargo = 0;
     }
 
     public void loadCargo(int cargoWeight) {
-        if (cargo + cargoWeight <= tankSize) {
+        if (cargo + cargoWeight <= cargoCapacity) {
             cargo += cargoWeight;
             System.out.println("Cargo loaded. Total cargo weight: " + cargo);
         } else {
-            System.out.println("Cannot load more cargo. Tank is full.");
+            System.out.println("Cannot load more cargo. Cargo capacity exceeded.");
         }
     }
 
@@ -22,7 +24,7 @@ public class Truck extends Car implements Recovery {
             cargo -= cargoWeight;
             System.out.println("Cargo unloaded. Total cargo weight: " + cargo);
         } else {
-            System.out.println("Cannot unload more cargo. Tank is empty.");
+            System.out.println("Cannot unload more cargo. No cargo available.");
         }
     }
 
@@ -41,6 +43,7 @@ public class Truck extends Car implements Recovery {
         }
     }
 }
+
 
 
 

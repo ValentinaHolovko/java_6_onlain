@@ -5,7 +5,7 @@ public class Main {
 
         Car car = new Car("XYZ", 2022, "black", 60, 20, 8);
         PassengerCar passengerCar = new PassengerCar("ABC", 2021, "white", 50, 25, 7, 3);
-        Truck truck = new Truck("DEF", 2020, "red", 80, 50, 15);
+        Truck truck = new Truck("DEF", 2020, "red", 80, 50, 15, 1500);
 
         car.move();
         car.showStatistics();
@@ -15,15 +15,14 @@ public class Main {
         passengerCar.addPassenger();
         passengerCar.addPassenger();
         passengerCar.addPassenger();
-        passengerCar.addPassenger();
         passengerCar.showStatistics();
 
         truck.move();
         truck.showStatistics();
-        truck.loadCargo(40);
-        truck.loadCargo(50);
+        truck.loadCargo(400);
+        truck.loadCargo(500);
         truck.showStatistics();
-        truck.unloadCargo(30);
+        truck.unloadCargo(300);
         truck.showStatistics();
 
     }
