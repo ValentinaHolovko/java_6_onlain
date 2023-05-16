@@ -22,7 +22,6 @@ public class Car implements Recovery {
         }
         this.fuelConsumption = fuelConsumption;
     }
-
     public void move() {
         while (fuel > 0) {
             fuel -= fuelConsumption;
@@ -34,14 +33,12 @@ public class Car implements Recovery {
 
         if (fuel == 0) {
             System.out.println("Car stopped. Out of fuel.");
-            refuel();
         }
     }
 
     public void refuel() {
-        int fuelToAdd = tankSize - fuel;
         fuel = tankSize;
-        System.out.println("Car refueled. Added " + fuelToAdd + " units of fuel.");
+        System.out.println("Car refueled. Fuel tank is full.");
     }
 
     public void showStatistics() {

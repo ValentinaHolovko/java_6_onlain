@@ -25,6 +25,22 @@ public class Truck extends Car implements Recovery {
             System.out.println("Cannot unload more cargo. Tank is empty.");
         }
     }
+
+    @Override
+    public void move() {
+        while (fuel > 0) {
+            fuel -= fuelConsumption * 2;
+            if (fuel < 0) {
+                fuel = 0;
+            }
+            System.out.println("Truck is moving. Fuel left: " + fuel);
+        }
+
+        if (fuel == 0) {
+            System.out.println("Truck stopped. Out of fuel.");
+        }
+    }
 }
+
 
 
