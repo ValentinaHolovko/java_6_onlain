@@ -3,6 +3,7 @@ package ua.holovko.jadv.hw12.task4;
 import java.util.Optional;
 
 class PhoneBook {
+
     private static final String[] PHONE_BOOK = new String[10];
 
     public static void main(String[] args) {
