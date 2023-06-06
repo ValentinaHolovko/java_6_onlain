@@ -2,7 +2,7 @@ package ua.holovko.jadv.hw14;
 
 public class Main {
     public static void main(String[] args) {
-        // Пример использования MySet
+
         MySet<Integer> set = new MySet<>(5);
         set.add(1);
         set.add(2);

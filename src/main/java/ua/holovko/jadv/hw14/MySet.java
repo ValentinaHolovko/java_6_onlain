@@ -13,11 +13,11 @@ public class MySet<T> {
 
     public boolean add(T element) {
         if (contains(element)) {
-            return false; // Элемент уже присутствует в массиве
+            return false;
         }
 
         if (size == elements.length) {
-            resizeArray(); // Увеличение размера массива при необходимости
+            resizeArray();
         }
 
         elements[size] = element;
