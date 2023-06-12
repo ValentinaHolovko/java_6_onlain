@@ -11,9 +11,9 @@ public class MySet<T> {
         size = 0;
     }
 
-    public boolean add(T element) {
+    public void add(T element) {
         if (contains(element)) {
-            return false;
+            return;
         }
 
         if (size == elements.length) {
@@ -22,7 +22,6 @@ public class MySet<T> {
 
         elements[size] = element;
         size++;
-        return true;
     }
 
     public T get(int index) {
